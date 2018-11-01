@@ -1,0 +1,135 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+.logout-button{
+
+  position:fixed;
+  right:10px;
+  top:5px;
+  background: lightcyan ;
+  border-radius: 25px;
+  height: 30px;
+  width: 60px;
+}
+header
+{
+  background: beige;
+  text-align: center;
+  border-radius: 25px;
+}
+.h2{
+  text-align: center;
+}
+.container
+{
+  text-align: center;
+  border-radius: 25px;
+  padding: 40px;
+  margin: 40px;
+  background: lightcyan;
+
+}
+label{
+  text-align: center;
+  padding: 40px;
+  margin: 40px;
+  border-radius: 25px;
+  border: cornflowerblue;
+}
+input{
+  text-align: center;
+  margin: 40px;
+  border-radius: 25px;
+  border: cornflowerblue;
+}
+.loginbtn
+{
+  text-align: center;
+  background: lightcyan ;
+  border-radius: 25px;
+}
+.registerbtn
+{
+  text-align: center;
+  background: lightcyan ;
+  border-radius: 25px;
+}
+#allcryptos{
+  
+  align-items: left;
+
+}
+.chat-button{
+    position:fixed;
+    bottom: 100px;
+    right: 50px;
+    border-radius: 25px;
+    background: yellowgreen;
+    height: 30px;
+    width: 300px;
+}
+.chat-area{
+  border-radius: 25px;
+  align-items: left;
+  padding: 10px;
+  background: rgba(30,119,76,0.15);
+
+}
+.message-area{
+  padding: 5px;
+  min-height: 45px;
+  width:400px;
+  border-radius: 25px;
+}
+.input-area
+{
+  padding: 10px;
+  position: fixed;
+  bottom: 10px;
+  border-radius: 25px;
+}
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content p {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content p:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #3e8e41;}

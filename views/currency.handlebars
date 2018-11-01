@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<header>
+    <form>
+    <button type="submit" class='logout-button'>Logout</button>
+    </form>
+</header>
+<div class="container">
+   <div class="curname"></div>
+    <div class="currprice">
+        <p class="dropbtn"> Choose the currency to convert</p>
+        <div class="dropdown-content">
+        </div>
+    </div>
+    <div class="chart"></div>
+    <button class="chat-button " href="/chat"> Chatters,let's get chatting! </button>
+</div>
+</html>
+<script>
+    var curId=window.href.pathname.split("/").pop();
+    var nme=document.getElementById('curname');
+    function showInfo()    {
+        var info=JSON.parse(response);
+        var name=document.createTextNode(info.name);
+        nme.appendChild(name);
+    }
+    var request=require('request');
+    var requestURL='https://api.coingecko.com/api/v3/coins/list'+'/'+curId+'?sparkline=true';
+    request.get(requestURL)
+            .on('response',function(response){
+                showInfo(response)
+            });
+</script>

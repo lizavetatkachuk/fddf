@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<div class="container">
+    <h1>Choose your crypto currency</h1>
+<ul id="allcryptos">
+
+</ul>
+    <button class="chat-button"> Chatters,let's get chatting! </button>
+</div>
+</html>
+<script>
+    var cryptos=document.getElementById('allcryptos');
+    var request=require('request');
+    var requestURL='https://api.coingecko.com/api/v3/coins/list';
+    function showInfo(response)
+    {
+        var info=JSON.parse(response);
+        for(var i in info)
+            {
+    var listItem=document.createElement('li');
+    listItem.setAttribute("id",i.id);
+    listItem.setAttribute("href","/general/"+i.id);
+    var currname=document.createTextNode(i.name);
+    listItem.appendChild(currname);
+    cryptos.appendChild(listItem);
+            }
+    }
+    request.get(requestURL)
+            .on('response',function(response){
+                showInfo(response)
+               });
+</script>

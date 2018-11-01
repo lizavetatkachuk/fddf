@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+<form action='/register' method="post">
+    <div class="container">
+        <h2>Log in</h2>
+        <label for="email"><b>Email</b></label>
+        <input type="text" name="email" required>
+        {{wrongE}}
+        <label for="psw"><b>Password</b></label>
+        <input type="password"  name="psw" required>
+        {{wrongP}}
+        <button class="loginbtn" type="submit"> Log in </button>
+    <div class="container-signin">
+
+        <p>Not a member yet? <a href="/register">Register!</a>.</p>
+    </div>
+    </div>
+</form>
+</html>
